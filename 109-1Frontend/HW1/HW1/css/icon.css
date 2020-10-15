@@ -1,0 +1,106 @@
+.circle {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #808080;
+}
+
+.rounded-rectangle {
+    width: 62px;
+    height: 62px;
+    border-radius: 10%;
+    display: inline-block;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #808080;
+}
+
+.i {
+
+    background-image: url(../img/icon-list.png);
+}
+
+
+/* 參考:https://developer.mozilla.org/zh-CN/docs/Web/CSS/background-position */
+.i-person {
+    background-size: 800%;
+    background-position: left 9% top 10%;
+}
+
+.i-phone {
+    background-size: 800%;
+    background-position: left 36% top 10%;
+}
+
+.i-message {
+    background-size: 800%;
+    background-position: right 37% top 9%;
+}
+
+.i-clock {
+    background-size: 820%;
+    background-position: right 10% top 10%;
+}
+
+.i-music {
+    background-size: 800%;
+    background-position: left 9% top 36%;
+}
+
+.i-photo {
+    background-size: 800%;
+    background-position: left 36% top 36%;
+}
+
+.i-photocamera {
+    background-size: 800%;
+    background-position: right 37% top 36%;
+}
+
+.i-videocamera {
+    background-size: 820%;
+    background-position: right 10% top 36%;
+}
+
+.i-webcam {
+    background-size: 800%;
+    background-position: left 9% bottom 36%;
+}
+
+.i-microphone {
+    background-size: 800%;
+    background-position: left 36% bottom 36%;
+}
+
+.i-trashcan {
+    background-size: 800%;
+    background-position: right 37% bottom 36%;
+}
+
+.i-find {
+    background-size: 780%;
+    background-position: right 9% bottom 36%;
+}
+
+.i-location {
+    background-size: 800%;
+    background-position: left 9% bottom 9%;
+}
+
+.i-setting {
+    background-size: 800%;
+    background-position: left 36% bottom 9%;
+}
+
+.i-speaker {
+    background-size: 800%;
+    background-position: right 37% bottom 9%;
+}
+
+.i-note {
+    background-size: 800%;
+    background-position: right 10% bottom 9%;
+}
