@@ -1,0 +1,131 @@
+/* 垂直置中 */
+.v-center {
+    padding-top: calc((100vh - 80vh)/2);
+}
+
+
+
+.border {
+    height: 88vh;
+    width: 20vw;
+    border: 20px solid #2196F3;
+    border-radius: 1.8vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.background {
+    height: 88vh;
+    background-image: url(../img/template.jpg);
+    background-size: contain;
+    border-radius: 0.4vw;
+    z-index: 2;
+}
+
+.i {
+
+    background-image: url(../img/template.jpg);
+}
+
+.line {
+    background-size: 660%;
+    background-position: left 8% top 4%;
+    z-index: 1;
+    margin-top: -510px;
+    margin-left: 515px;
+}
+
+.wechat {
+    background-size: 660%;
+    background-position: left 36% top 4%;
+    z-index: 1;
+    margin-top: -41px;
+    margin-left: 575px;
+}
+
+.whatsapp {
+    background-size: 660%;
+    background-position: right 36% top 4%;
+    z-index: 1;
+    margin-top: -41px;
+    margin-left: 635px;
+}
+
+.ig {
+    background-size: 660%;
+    background-position: left 8% top 19%;
+    z-index: 1;
+    margin-top: 31px;
+    margin-left: 515px;
+}
+
+.messenger {
+    background-size: 660%;
+    background-position: left 36% top 19%;
+    z-index: 1;
+    margin-top: -39px;
+    margin-left: 575px;
+}
+
+.fb {
+    background-size: 660%;
+    background-position: right 36% top 19%;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: 635px;
+}
+
+.gmail {
+    background-size: 660%;
+    background-position: left 8% top 34%;
+    z-index: 1;
+    margin-top: 28px;
+    margin-left: 515px;
+}
+
+.shopee {
+    background-size: 660%;
+    background-position: left 36% top 34%;
+    z-index: 1;
+    margin-top: -39px;
+    margin-left: 575px;
+}
+
+.call {
+    background-size: 660%;
+    background-position: left 9% bottom 4%;
+    z-index: 1;
+    margin-top: 250px;
+    margin-left: 515px;
+}
+
+.text {
+    background-size: 660%;
+    background-position: left 36% bottom 4%;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: 575px;
+}
+
+.chrome {
+    background-size: 660%;
+    background-position: right 36% bottom 4%;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: 635px;
+}
+
+.camera {
+    background-size: 660%;
+    background-position: right 8% bottom 4%;
+    z-index: 1;
+    margin-top: -40px;
+    margin-left: 695px;
+}
+
+.rounded-rectangle {
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+}
