@@ -4,128 +4,159 @@
 }
 
 
-
 .border {
-    height: 500px;
+    position: absolute;
+    top: 80px;
+    left: 300px;
+    height: 450px;
     width: 250px;
     border: 20px solid #2196F3;
-    border-radius: 1.8vw;
+    border-radius: 20px;
     margin-left: auto;
     margin-right: auto;
 }
 
 
 .background {
-    height: 500px;
+    height: 450px;
     background-image: url(../img/template.jpg);
     background-size: 100%;
-    border-radius: 0.4vw;
+    border-radius: 2px;
     z-index: 2;
 }
 
 .i {
 
-    background-image: url(../img/template.jpg);
+    background-image: url(../img/完成圖.jpg);
 }
 
 .line {
-    background-size: 660%;
-    background-position: left 8% top 4%;
-    z-index: 1;
-    margin-top: -500px;
-    margin-left: 515px;
+    position: relative;
+    top: 20px;
+    left: 320px;
+    background-image: url(../img/line.png);
+    background-size: 100%;
+    z-index: 2;
 }
 
 .wechat {
-    background-size: 660%;
-    background-position: left 36% top 4%;
-    z-index: 1;
-    margin-top: -41px;
-    margin-left: 575px;
+    position: relative;
+    top: -35px;
+    left: 375px;
+    background-image: url(../img/wechat.png);
+    background-size: 100%;
+    z-index: 2;
 }
 
 .whatsapp {
-    background-size: 660%;
-    background-position: right 36% top 4%;
-    z-index: 1;
-    margin-top: -41px;
-    margin-left: 635px;
+    position: relative;
+    top: -88px;
+    left: 435px;
+    background-image: url(../img/whatsapp.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position: left 30%;
+    z-index: 2;
 }
 
 .ig {
-    background-size: 660%;
-    background-position: left 8% top 19%;
-    z-index: 1;
-    margin-top: 27px;
-    margin-left: 515px;
+    position: relative;
+    top: -80px;
+    left: 325px;
+    background-image: url(../img/ig.png);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    z-index: 2;
 }
 
 .messenger {
-    background-size: 660%;
-    background-position: left 36% top 19%;
-    z-index: 1;
-    margin-top: -39px;
-    margin-left: 575px;
+    position: relative;
+    top: -135px;
+    left: 380px;
+    background-image: url(../img/messenger.jpg);
+    background-size: 100%;
+    z-index: 2;
 }
 
 .fb {
-    background-size: 660%;
-    background-position: right 36% top 19%;
-    z-index: 1;
-    margin-top: -40px;
-    margin-left: 635px;
+    position: relative;
+    top: -175px;
+    left: 440px;
+    background-image: url(../img/fb.png);
+    background-size: 100%;
+    z-index: 2;
 }
 
 .gmail {
-    background-size: 660%;
-    background-position: left 8% top 34%;
-    z-index: 1;
-    margin-top: 28px;
-    margin-left: 515px;
+    position: relative;
+    top: -160px;
+    left: 325px;
+    background-image: url(../img/gmail.png);
+    background-size: 100%;
+    z-index: 2;
 }
 
 .shopee {
-    background-size: 660%;
-    background-position: left 36% top 34%;
-    z-index: 1;
-    margin-top: -39px;
-    margin-left: 575px;
+    position: relative;
+    top: -205px;
+    left: 378px;
+    background-image: url(../img/shopee.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    z-index: 2;
 }
 
 .call {
+    position: relative;
+    top: 11px;
+    left: 330px;
+    background-position: left 8.5% bottom 4%;
     background-size: 660%;
-    background-position: left 9% bottom 4%;
-    z-index: 1;
-    margin-top: 240px;
-    margin-left: 515px;
+    z-index: 2;
 }
 
 .text {
-    background-size: 660%;
+    position: relative;
+    top: -29px;
+    left: 390px;
     background-position: left 36% bottom 4%;
-    z-index: 1;
-    margin-top: -40px;
-    margin-left: 575px;
+    background-size: 660%;
+    z-index: 2;
 }
 
 .chrome {
-    background-size: 660%;
-    background-position: right 36% bottom 4%;
-    z-index: 1;
-    margin-top: -40px;
-    margin-left: 635px;
+    position: relative;
+    top: -70px;
+    left: 450px;
+    background-image: url(../img/chrome.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
 }
 
 .camera {
+    position: relative;
+    top: -108px;
+    left: 505px;
+    background-position: right 8.5% bottom 4%;
     background-size: 660%;
-    background-position: right 8% bottom 4%;
-    z-index: 1;
-    margin-top: -40px;
-    margin-left: 695px;
+    z-index: 2;
 }
 
 .rounded-rectangle {
-    width: 40px;
-    height: 40px;
+    width: 55px;
+    height: 55px;
+    border-radius: 10%;
+}
+
+.rounded-rectangle2 {
+    width: 41px;
+    height: 41px;
+    border-radius: 10%;
+}
+
+.rounded-rectangle3 {
+    width: 38px;
+    height: 38px;
     border-radius: 10%;
 }
