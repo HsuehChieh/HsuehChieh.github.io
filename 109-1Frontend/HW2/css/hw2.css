@@ -19,7 +19,7 @@
 
 .background {
     height: 450px;
-    background-image: url(../img/template.jpg);
+    background-image: url(../img/background.jpg);
     background-size: 100%;
     border-radius: 2px;
     z-index: 1;
@@ -27,7 +27,7 @@
 
 .i {
 
-    background-image: url(../img/完成圖.jpg);
+    background-image: url(../img/template.jpg);
 }
 
 .line {
