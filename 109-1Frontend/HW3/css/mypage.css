@@ -1,0 +1,111 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oleo Script', cursive;
+}
+
+p {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+}
+
+.font {
+    font-family: 'Oleo Script', cursive;
+}
+
+#Intro.jumbotron {
+    padding: 5px 5px;
+}
+
+#Intro.img header nav li,
+a {
+    font-family: 'Crimson Text', serif;
+    font-size: 20px;
+}
+
+.img-me {
+    height: 450px;
+    width: 450px;
+    margin-left: 10px;
+    background-image: url(../img/PIC.jpg);
+    background-size: 200%;
+    background-position-x: -160px;
+    background-position-y: -100px;
+    margin-left: 6vw;
+    z-index: 1;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.v-center {
+    margin-top: calc((100vh - 200px) / 2);
+}
+
+.arrow {
+    height: 100px;
+    position: relative;
+    background-image: url(../img/arrow.png);
+    z-index: 2;
+}
+
+/* 文字垂直置中 */
+.inner {
+    height: 300px;
+    line-height: 300px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.text {
+    font-size: 25px;
+}
+
+.project {
+    position: relative;
+    width: 70%;
+    height: 60%;
+    display: block;
+    overflow: hidden;
+    z-index: 0;
+    margin-bottom: 50px;
+}
+
+.box {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-color: #ff000021;
+    z-index: 1;
+    border-radius: 20px;
+}
+
+
+.img1 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-image: url(../img/map.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: -260px;
+    left: 50px;
+}
+
+.text-box {
+    position: relative;
+    width: 135px;
+    height: 50px;
+    background-color: #e59fbe;
+    z-index: 2;
+    top: -285px;
+    left: 105px;
+    border-radius: 10px;
+}
