@@ -277,6 +277,7 @@ h1 {
 .info {
     color: #867c7cdb;
     font-size: 25px;
+    margin-top: -8px;
 }
 
 .info2 {
