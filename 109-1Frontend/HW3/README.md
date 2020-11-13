@@ -21,6 +21,7 @@ HsuehChieh.github.io/109-1Frontend/HW3/mypage.html
     1.圖片內縮效果(https://demo.themewagon.com/preview/free-html5-bootstrap-4-travel-agency-website-template-ecoland) → 改變的部分：原本網站是會連結到新網頁，改成將縮圖放大
     2.調整圖片縮放大小
     3.bootstrap－Carousel
+    4.時間軸(參考資料：https://demo.themewagon.com/preview/free-bootstrap-wedding-website-template）
 
 六、Contact
     1.版面配置參考https://demo.themewagon.com/preview/free-html5-bootstrap-4-travel-agency-website-template-ecoland，但是以自己的方法寫成，僅有參考樣式而無直接使用css

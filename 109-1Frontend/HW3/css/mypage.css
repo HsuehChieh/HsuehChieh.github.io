@@ -369,3 +369,28 @@ h1 {
 b {
     list-style-type: square;
 }
+
+.timeline>li>.timeline-badge {
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #0c0c0c;
+    width: 160px;
+    height: 160px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -80px;
+    background-color: #999999;
+    z-index: 100;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    border: solid;
+    border-color: #828282;
+}
