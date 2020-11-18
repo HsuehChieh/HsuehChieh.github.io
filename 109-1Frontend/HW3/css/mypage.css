@@ -394,3 +394,10 @@ b {
     border: solid;
     border-color: #828282;
 }
+
+.btnstyle:hover,
+.btnstyle:focus,
+.btnstyle:active {
+    background: #e0b1aad6 !important;
+    border-color: #e0b1aad6 !important;
+}
