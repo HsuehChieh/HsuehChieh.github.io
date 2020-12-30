@@ -1,0 +1,19 @@
+.middle {
+  left: 120px;
+}
+
+.frame {
+  left: 180px;
+  position: relative;
+}
+
+a,
+p,
+span {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 19px;
+}
+
+h2 {
+  font-family: 'Noto Serif TC', serif;
+}
