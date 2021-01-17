@@ -21,9 +21,81 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
+<!-- 開啟就跳出遊戲說明 -->
+
 <body>
     <div>
         <h1 class="pad text-center">Taiwan Monopoly</h1>
+    </div>
+    <!-- 開始跳出遊戲說明 -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalA" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title modal-T-font" id="exampleModalLabel">📢遊戲說明</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-B-font">
+                    為一兩人競賽的遊戲，透過擲骰子決定前進步數並回答該格縣市相關的題目，正確則可前進，回答錯誤則需停在原地，但若交白卷者直接回到原點，最先完成一圈者獲勝。<br><br>
+                    遊戲步驟<br>
+                    ⓵選擇角色<br>
+                    ⓶擲骰子<br>
+                    ⓷回答問題<br>
+                    ⓸答對者可前進該格，答錯者停在原地
+                </div>
+                <div class="modal-footer">
+                    <button id="start" type="button" class="btn btn-secondary" data-dismiss="modal">開始遊戲!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 選擇角色 -->
+    <div class="modal fade bd-example-modal-lg" id="exampleModalB" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title modal-T-font" id="exampleModalLabel">選擇角色</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-B-font row">
+                    <div class="col-md-3">
+                        <button id="r_1" class="choosebtn"> <img class="role" src="./img/r_1.png"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="r_2" class="choosebtn"> <img class="role" src="./img/r_2.png"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="r_3" class="choosebtn"><img class="role" src="./img/r_3.png"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="r_4" class="choosebtn"><img class="role" src="./img/r_4.png"></button>
+                    </div>
+                </div>
+                <div class="modal-body modal-B-font row">
+                    <div class="col-md-3">
+                        <button id="r_5" class="choosebtn"><img class="role" src="./img/r_5.png"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="r_6" class="choosebtn"><img class="role" src="./img/r_6.png"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="r_7" class="choosebtn"><img class="role" src="./img/r_7.png"></button>
+                    </div>
+                    <div class="col-md-3">
+                        <button id="r_8" class="choosebtn"><img class="role" src="./img/r_8.png"></button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">選擇完畢</button>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="row">
@@ -33,11 +105,11 @@
                     <div id="0" class="col-md-2 box1" style="background-color: #F9E79F;border: 2px solid orange;">
                         <h3 class="text-center vertical" style="color: orange;">Start</h3>
                         <img class="pic" src="./img/right.png" style="top: -70px;left: 30px;">
-                        <div style="margin-top: 240px;margin-left: 50px;">
-                            <img id="role1" class="doll" src="./img/台灣黑熊.png">
+                        <div style="margin-top: 240px;margin-left: 25px;">
+                            <img id="role1" class="doll" src="./img/role1.png">
                         </div>
                         <div style="margin-left: -30px;margin-top: 85px;">
-                            <img id="role2" class="doll" src="./img/梅花鹿.png">
+                            <img id="role2" class="doll" src="./img/role2.png">
                         </div>
                     </div>
                     <div id="1" class="col-md-2 box1"
@@ -77,7 +149,7 @@
                         <button id="countbtn" type="button" class="clickbtn btnfont move" onClick="throwdice()">Throw
                             Dice 0</button>
                         <script src="./js/dice.js"></script>
-                        <img src="./img/question.png" class="move2" name="mydice" style="width: 100px;">
+                        <img id="dicegif" src="./img/dice.gif" class="move2" name="mydice" style="width: 100px;">
                     </div>
                     <div id="6" class="col-md-2 box1"
                         style="background-color:rgb(157, 227, 229);border: 2px solid rgb(12, 168, 173);">
@@ -90,6 +162,7 @@
                         <h2 class="text-center vertical2" style="color:#cca200;">Hualien</h2>
                         <img class="pic2" src="./img/大峽谷.jpg" style="top: -340px;left: -8px;">
                     </div>
+                    <!-- 跳出視窗採用Modal -->
                     <div class="col-md-8 box2">
                         <script src="./js/dice.js"></script>
                         <div class="row">
@@ -103,11 +176,11 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 id="1-1" class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         基隆廟口夜市有名的鼎邊銼的「銼」在臺語中是什麼意思?
                                                     </h5>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz1" id="quiz1">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -118,7 +191,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA1(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,1)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -135,13 +208,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">101高度最接近多少公尺?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
+                                                        101高度最接近多少公尺?</h5>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz2" id="quiz2">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -152,7 +222,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA2(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,2)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -171,13 +241,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">「放天燈」為什麼節日的習俗?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
+                                                        「放天燈」為什麼節日的習俗?</h5>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz3" id="quiz3">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -188,7 +255,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA3(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,3)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -205,13 +272,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">石門水庫的蓄水量為臺灣第幾大?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
+                                                        石門水庫的蓄水量為臺灣第幾大?</h5>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz" id="quiz">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -222,7 +286,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA4(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,4)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -241,14 +305,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         新竹柿餅背後的功臣「九降風」的「九」是什麼意思?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz5" id="quiz5">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -259,7 +319,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA5(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,5)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -276,14 +336,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         苗栗有著名的油桐花祭，請問油桐花又有什麼別稱?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz6" id="quiz6">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -294,7 +350,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA6(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,6)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -313,14 +369,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         臺中最美校園中的路思義教堂是打卡熱點，其設計風格為何?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz7" id="quiz7">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -331,7 +383,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA7(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,7)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -348,20 +400,16 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         兜兜兜兜兜...道路施工</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
-                                                    <form name="quiz6" id="quiz6">
+                                                <div class="modal-body modal-Bfont">
+                                                    <form name="quiz8" id="quiz8">
                                                         <script src="./js/dice.js"></script>
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA8(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,8)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -380,14 +428,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         請問臺灣第一大湖泊日月潭最早的住民是以下哪個族群?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz9" id="quiz9">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -398,7 +442,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA9(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,9)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -408,21 +452,17 @@
                                 </div>
                                 <!-- 嘉義 -->
                                 <div>
-                                    <button id="btn6" type="button" class="mybtn mybtn-primary" data-toggle="modal"
+                                    <button id="btn10" type="button" class="mybtn mybtn-primary" data-toggle="modal"
                                         data-target="#exampleModal10" data-whatever="@mdo"></button>
                                     <div class="modal fade" id="exampleModal10" tabindex="-1"
                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         其實阿里山不是一座山而是一個風景區，請問阿里山離哪座山脈最遠?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz10" id="quiz10">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -433,7 +473,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA10(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,10)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -452,14 +492,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         安平古堡為荷蘭人所建的據點，請問當時的名字為何?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz11" id="quiz11">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -470,7 +506,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA11(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,11)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -487,14 +523,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         高雄著名的「光之穹頂」位在哪個捷運站?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz10" id="quiz10">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -505,7 +537,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA12(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,12)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -524,14 +556,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         鵝鑾鼻附近有一巨大礁岩形似帆船故得名，請問「鵝鑾」是哪族語的「帆船」?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz113" id="quiz13">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -542,7 +570,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA13(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,13)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -559,14 +587,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         堪稱鬼斧神工的太魯閣峽谷是由哪條溪流切鑿形成?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz14" id="quiz14">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -577,7 +601,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA14(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,14)">
                                                         </div>
                                                     </form>
                                                 </div>
@@ -594,14 +618,10 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
                                                         飛魚季為達悟族的重要節日，所有同一年度飛魚季捕獲的飛魚必須於何時前吃完?</h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
                                                 </div>
-                                                <div class="modal-body">
+                                                <div class="modal-body modal-Bfont">
                                                     <form name="quiz15" id="quiz15">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
@@ -612,7 +632,7 @@
                                                         <div>
                                                             <input type="button"
                                                                 class="btn btn-primary modal-footer move4 " value="Send"
-                                                                data-dismiss="modal" onClick="QA15(this.form)">
+                                                                data-dismiss="modal" onClick="QA(this.form,15)">
                                                         </div>
                                                     </form>
                                                 </div>

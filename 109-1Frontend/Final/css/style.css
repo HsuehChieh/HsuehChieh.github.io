@@ -81,7 +81,7 @@ h2 {
 }
 
 .doll {
-    height: 80px;
+    height: 100px;
     z-index: 5;
     position: relative;
     margin-left: 20px;
@@ -126,4 +126,46 @@ p {
     outline: none;
     border-color: transparent;
     box-shadow: none;
+}
+
+
+@font-face {
+    font-family: 'font';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../font/GenWanMin-SB.ttc");
+}
+
+.modal-T-font {
+    font-family: 'font';
+    font-size: 30px;
+}
+
+.modal-B-font {
+    font-family: 'font';
+    font-size: 24px;
+}
+
+.modal-Tfont {
+    font-family: 'font';
+    font-size: 24px;
+}
+
+.modal-Bfont {
+    font-family: 'font';
+    font-size: 20px;
+}
+
+.role {
+    height: 150px;
+}
+
+.role2 {
+    height: 180px;
+}
+
+.choosebtn {
+    color: #ffffff00;
+    background: #ffffff00;
+    border: 2px solid #ffffff00;
 }
