@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<!-- 開啟就跳出遊戲說明 -->
-
 <body>
     <div>
         <h1 class="pad text-center">Taiwan Monopoly</h1>
@@ -44,7 +42,8 @@
                     ⓵選擇角色<br>
                     ⓶擲骰子<br>
                     ⓷回答問題<br>
-                    ⓸答對者可前進該格，答錯者停在原地
+                    ⓸答對者可前進該格，答錯者停在原地<br><br>
+
                 </div>
                 <div class="modal-footer">
                     <button id="start" type="button" class="btn btn-secondary" data-dismiss="modal">開始遊戲!</button>
@@ -176,17 +175,20 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 id="1-1" class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        基隆廟口夜市有名的鼎邊銼的「銼」在臺語中是什麼意思?
+                                                    <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
+                                                        <div class="question"></div>
                                                     </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz1" id="quiz1">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q1" value="a">跑動
-                                                            <input type="radio" name="q1" value="b">蠕動
-                                                            <input type="radio" name="q1" value="c">跳動
+                                                            <input type="radio" name="q1" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q1" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q1" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -209,15 +211,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        101高度最接近多少公尺?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz2" id="quiz2">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q2" value="a">610公尺
-                                                            <input type="radio" name="q2" value="b">560公尺
-                                                            <input type="radio" name="q2" value="c">510公尺
+                                                            <input type="radio" name="q2" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q2" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q2" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -242,15 +248,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        「放天燈」為什麼節日的習俗?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz3" id="quiz3">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q3" value="a">春節
-                                                            <input type="radio" name="q3" value="b">兒童節
-                                                            <input type="radio" name="q3" value="c">元宵節
+                                                            <input type="radio" name="q3" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q3" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q3" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -273,15 +283,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        石門水庫的蓄水量為臺灣第幾大?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz" id="quiz">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q" value="a">第一大
-                                                            <input type="radio" name="q" value="b">第二大
-                                                            <input type="radio" name="q" value="c">第三大
+                                                            <input type="radio" name="q" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -306,15 +320,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        新竹柿餅背後的功臣「九降風」的「九」是什麼意思?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz5" id="quiz5">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q5" value="a">農曆九月
-                                                            <input type="radio" name="q5" value="b">每月九日
-                                                            <input type="radio" name="q5" value="c">晚上九點
+                                                            <input type="radio" name="q5" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q5" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q5" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -337,15 +355,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        苗栗有著名的油桐花祭，請問油桐花又有什麼別稱?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz6" id="quiz6">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q6" value="a">四月白
-                                                            <input type="radio" name="q6" value="b">五月雪
-                                                            <input type="radio" name="q6" value="c">六月花
+                                                            <input type="radio" name="q6" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q6" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q6" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -370,15 +392,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        臺中最美校園中的路思義教堂是打卡熱點，其設計風格為何?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz7" id="quiz7">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q7" value="a">古典主義
-                                                            <input type="radio" name="q7" value="b">現代主義
-                                                            <input type="radio" name="q7" value="c">後現代主義
+                                                            <input type="radio" name="q7" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q7" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q7" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -429,15 +455,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        請問臺灣第一大湖泊日月潭最早的住民是以下哪個族群?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz9" id="quiz9">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q9" value="a">漢人
-                                                            <input type="radio" name="q9" value="b">鄒族
-                                                            <input type="radio" name="q9" value="c">邵族
+                                                            <input type="radio" name="q9" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q9" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q9" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -460,15 +490,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        其實阿里山不是一座山而是一個風景區，請問阿里山離哪座山脈最遠?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz10" id="quiz10">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q10" value="a">海岸山脈
-                                                            <input type="radio" name="q10" value="b">雪山山脈
-                                                            <input type="radio" name="q10" value="c">玉山山脈
+                                                            <input type="radio" name="q10" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q10" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q10" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -493,15 +527,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        安平古堡為荷蘭人所建的據點，請問當時的名字為何?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz11" id="quiz11">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q11" value="a">聖多明哥城
-                                                            <input type="radio" name="q11" value="b">普羅民遮城
-                                                            <input type="radio" name="q11" value="c">熱蘭遮城
+                                                            <input type="radio" name="q11" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q11" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q11" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -524,15 +562,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        高雄著名的「光之穹頂」位在哪個捷運站?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz10" id="quiz10">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q12" value="a">西子灣站
-                                                            <input type="radio" name="q12" value="b">美麗島站
-                                                            <input type="radio" name="q12" value="c">夢時代站
+                                                            <input type="radio" name="q12" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q12" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q12" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -557,15 +599,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        鵝鑾鼻附近有一巨大礁岩形似帆船故得名，請問「鵝鑾」是哪族語的「帆船」?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz113" id="quiz13">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q13" value="a">排灣族
-                                                            <input type="radio" name="q13" value="b">卑南族
-                                                            <input type="radio" name="q13" value="c">西拉雅族
+                                                            <input type="radio" name="q13" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q13" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q13" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -588,15 +634,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        堪稱鬼斧神工的太魯閣峽谷是由哪條溪流切鑿形成?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz14" id="quiz14">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q14" value="a">花蓮溪
-                                                            <input type="radio" name="q14" value="b">卑南溪
-                                                            <input type="radio" name="q14" value="c">立霧溪
+                                                            <input type="radio" name="q14" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q14" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q14" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
@@ -619,15 +669,19 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title modal-Tfont" id="exampleModalLabel">
-                                                        飛魚季為達悟族的重要節日，所有同一年度飛魚季捕獲的飛魚必須於何時前吃完?</h5>
+                                                        <div class="question"></div>
+                                                    </h5>
                                                 </div>
                                                 <div class="modal-body modal-Bfont">
                                                     <form name="quiz15" id="quiz15">
                                                         <script src="./js/dice.js"></script>
                                                         <ul style="margin-top: 1pt">
-                                                            <input type="radio" name="q15" value="a">7/7
-                                                            <input type="radio" name="q15" value="b">10/15
-                                                            <input type="radio" name="q15" value="c">12/32
+                                                            <input type="radio" name="q15" value="a">
+                                                            <h class="option_1"></h>
+                                                            <input type="radio" name="q15" value="b">
+                                                            <h class="option_2"></h>
+                                                            <input type="radio" name="q15" value="c">
+                                                            <h class="option_3"></h>
                                                         </ul>
                                                         <div>
                                                             <input type="button"
