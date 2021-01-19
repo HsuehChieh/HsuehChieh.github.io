@@ -37,3 +37,6 @@ HsuehChieh.github.io/109-1Frontend/Final/TaiwanMonopoly.html
     5.有一格暫停，獨立出來另外寫
     6.利用Array設計三道問題，使題目產生變化
 
+七、期末報告第二點要求「新增、刪除、顯示、隱藏 HTML Element 等功能」
+    1.$("#role1").appendTo("#"+(role_1)).addClass("move3")
+    2.exampleModal.addEventListener
