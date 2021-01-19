@@ -35,4 +35,5 @@ HsuehChieh.github.io/109-1Frontend/Final/TaiwanMonopoly.html
     3.若currSelection的值不等於答案則退回原本的那格
     4.不回答則回到原點
     5.有一格暫停，獨立出來另外寫
+    6.利用Array設計三道問題，使題目產生變化
 
