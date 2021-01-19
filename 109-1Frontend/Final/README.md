@@ -23,7 +23,7 @@ HsuehChieh.github.io/109-1Frontend/Final/TaiwanMonopoly.html
 五、function throwdice(jQuery)
     1.當點擊擲骰時記錄點擊次數
     2.當點擊次數為奇數則角色一擲骰前進，偶數則為角色二
-    3.利用Math.round(Math.random() * 2) + 1決定骰子點數
+    3.利用Math.round(Math.random() * 2) + 1決定骰子點數與題目
     4.利用appendTo使角色移動到骰到的位置
     5.到該點後跳出該縣市的問答視窗
     6.當有一個角色完成一圈後跳出視窗讓贏家輸入名字後跳出獲勝訊息
