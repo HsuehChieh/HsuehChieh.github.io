@@ -59,9 +59,9 @@ var option_3_array = [["跳動","濟公活佛","越南"],["510公尺","狼山","
 button.onclick = function throwdice() {
   count += 1;
   button.innerHTML = "Throw Dice " + count;
-  randomdice_1 = Math.round(Math.random() * 2) + 1;
-  randomdice_2 = Math.round(Math.random() * 2) + 1;
-  question_selector =  Math.round(Math.random() * 2) + 1;
+  randomdice_1 = Math.round(Math.random() * 2) + 1; //決定角色1的前進步數
+  randomdice_2 = Math.round(Math.random() * 2) + 1; //決定角色2的前進步數
+  question_selector =  Math.round(Math.random() * 2) + 1; //決定題目為三題中哪一題
     // 骰子奇數時角色1移動
     if (count % 2 == 1) {
       document.getElementById("dicegif").src = "./img/" + randomdice_1 + ".png";
