@@ -1,0 +1,171 @@
+.pad {
+    padding: 20px 30px;
+}
+
+.box1 {
+    height: 200px;
+    border: 1px solid #000;
+    background: lightgray;
+    z-index: -1;
+    position: relative;
+}
+
+.box2 {
+    width: 200px;
+    height: 200px;
+    background: transparent;
+}
+
+.vertical {
+    line-height: 150px;
+}
+
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'Ultra', serif;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: 'Ultra', serif;
+    font-size: 24px;
+}
+
+.pic {
+    z-index: 2;
+    position: relative;
+    background-size: 50%;
+    width: 60px;
+}
+
+.vertical2 {
+    line-height: 340px;
+}
+
+.pic2 {
+    z-index: 1s;
+    position: relative;
+    background-size: 50%;
+    width: 140px;
+    display: inline;
+}
+
+.vertical3 {
+    line-height: 200px;
+}
+
+.clickbtn {
+    color: #000000;
+    background: #b3b2b0;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+.btnfont {
+    font-family: 'Ultra', serif;
+    font-size: 16px;
+}
+
+.move {
+    margin-left: 228px;
+    margin-top: 120px;
+}
+
+.move2 {
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.doll {
+    height: 100px;
+    z-index: 5;
+    position: relative;
+    margin-left: 20px;
+    margin-top: -860px;
+}
+
+p {
+    font-family: 'Abril Fatface', cursive;
+}
+
+.move3 {
+    margin-left: 20px;
+    margin-top: -860px;
+}
+
+.move4 {
+    margin-left: 400px;
+}
+
+
+.mybtn-primary:hover {
+    color: rgba(255, 255, 255, 0);
+    background-color: #ffffff00;
+    border-color: #ffffff00;
+    outline: 0;
+}
+
+.mybtn-primary {
+    color: rgba(255, 255, 255, 0);
+    background-color: #ffffff00;
+    border-color: #ffffff00;
+    outline: 0;
+}
+
+/* 解決點擊後button會有邊框的問題 */
+.mybtn:focus,
+.mybtn:active:focus,
+.mybtn.active:focus,
+.mybtn.focus,
+.mybtn:active.focus,
+.mybtn.active.focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+
+@font-face {
+    font-family: 'font';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../font/wt004.ttf");
+}
+
+.modal-T-font {
+    font-family: 'font';
+    font-size: 30px;
+}
+
+.modal-B-font {
+    font-family: 'font';
+    font-size: 24px;
+}
+
+.modal-Tfont {
+    font-family: 'font';
+    font-size: 24px;
+}
+
+.modal-Bfont {
+    font-family: 'font';
+    font-size: 20px;
+}
+
+.role {
+    height: 150px;
+}
+
+.role2 {
+    height: 180px;
+}
+
+.choosebtn {
+    color: #ffffff00;
+    background: #ffffff00;
+    border: 2px solid #ffffff00;
+}
