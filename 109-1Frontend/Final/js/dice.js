@@ -100,7 +100,7 @@ button.onclick = function throwdice() {
           setTimeout("location.reload()",1000);
       }
       setTimeout("document.getElementById('dicegif').src = './img/dice.gif'",7000);
-      //setTimeout(() => {button.innerHTML = "Role1 Throw"}, 7000);
+      setTimeout(() => {button.innerHTML = "Role1 Throw"}, 7000);
   }
   // 骰子偶數時角色2移動
   if (count % 2 == 0) {
