@@ -58,12 +58,13 @@ var option_3_array = [["跳動","濟公活佛","越南"],["510公尺","狼山","
 
 button.onclick = function throwdice() {
   count += 1;
-  button.innerHTML = "Throw Dice " + count;
+  button.innerHTML = "Role1 Throw";
   randomdice_1 = Math.round(Math.random() * 2) + 1; //決定角色1的前進步數
   randomdice_2 = Math.round(Math.random() * 2) + 1; //決定角色2的前進步數
   question_selector =  Math.round(Math.random() * 2) + 1; //決定題目為三題中哪一題
     // 骰子奇數時角色1移動
     if (count % 2 == 1) {
+      button.innerHTML = "Role2 Throw"
       document.getElementById("dicegif").src = "./img/" + randomdice_1 + ".png";
       document.images["#role1"];
       role_1 += randomdice_1;
@@ -98,10 +99,12 @@ button.onclick = function throwdice() {
           // setTimeout("alert('Role1 Win!!!')",500);
           setTimeout("location.reload()",1000);
       }
-      setTimeout("document.getElementById('dicegif').src = './img/dice.gif'",5000)
+      setTimeout("document.getElementById('dicegif').src = './img/dice.gif'",7000);
+      setTimeout(() => {button.innerHTML = "Role1 Throw"}, 7000);
   }
   // 骰子偶數時角色2移動
   if (count % 2 == 0) {
+      button.innerHTML = "Role1 Throw"
       document.getElementById("dicegif").src = "./img/" + randomdice_2 + ".png";
       document.images["#role2"];
       role_2 += randomdice_2;
@@ -134,7 +137,8 @@ button.onclick = function throwdice() {
           alert(`🎉${name} wins!!🎉`,500); 
           setTimeout("location.reload()",1000);
       }
-      setTimeout("document.getElementById('dicegif').src = './img/dice.gif'",5000)
+      setTimeout("document.getElementById('dicegif').src = './img/dice.gif'",5000);
+      // setTimeout(() => {button.innerHTML = "Role1 Throw"}, 5000);
   }
   }
 
@@ -182,16 +186,15 @@ button.onclick = function throwdice() {
               }
             }
           }
-          if(stop_1 == 1 || stop_2 == 1){
-            button.innerHTML = "Throw Dice " + (count + 1);
-          }
           if(stop_1 == 1){
             count += 1;
             stop_1 = 0;
+            button.innerHTML = "Role2 Throw";
           }
           if(stop_2 == 1){
             count += 1;
             stop_2 = 0;
+            button.innerHTML = "Role1 Throw";
           }
       }
       else{
@@ -203,7 +206,12 @@ button.onclick = function throwdice() {
           stop_2 = 1;
         }
         if(stop_1 == 1 && stop_2 == 1){
-            button.innerHTML = "Throw Dice " + (count + 2);
+            if(count % 2 == 1){
+              button.innerHTML = "Role2 Throw";
+            }
+            else{
+              button.innerHTML = "Role1 Throw";
+            }
             count += 2
             stop_1 = 0
             stop_2 = 0
