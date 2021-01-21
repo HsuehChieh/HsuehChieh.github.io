@@ -40,3 +40,6 @@ HsuehChieh.github.io/109-1Frontend/Final/TaiwanMonopoly.html
 七、期末報告第二點要求「新增、刪除、顯示、隱藏 HTML Element 等功能」
     1.$("#role1").appendTo("#"+(role_1)).addClass("move3")
     2.exampleModal.addEventListener
+    
+八、依照1/19報告後老師建議調整
+    1.將按鈕改成Role1 Throw、Role2 Throw，提供較直觀的設計
